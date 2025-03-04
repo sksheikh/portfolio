@@ -1,5 +1,7 @@
 import React from 'react';
-import Logo from '../assets/images/logo.svg';
+// import Logo from '../assets/images/logo.svg';
+import Logo from '../assets/images/logo.png';
+
 
 const aboutItems = [
     {
@@ -36,9 +38,9 @@ const About = () => {
                         <img
                             src={Logo}
                             alt="logo"
-                            width={30}
-                            height={30}
-                            className='ml-auto md:w-[40px] md:h-[40px]' />
+                            width={150}
+                            height={150}
+                            className='ml-auto md:w-[30] md:h-[30]' />
                     </div>
                 </div>
             </div>
