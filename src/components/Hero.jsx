@@ -1,7 +1,11 @@
 import React from 'react'
-import AvaterImg from '../assets/images/avatar-1.jpg'
+// import AvaterImg from '../assets/images/avatar-1.jpg'
+import AvaterImg from '../assets/images/faviconicon.png'
+
 // import HeroImg from '../assets/images/hero-banner.png'
-import HeroImg from '../assets/images/bg-img.png'
+// import HeroImg from '../assets/images/bg-img.png'
+import HeroImg from '../assets/images/about-sheikh.png'
+
 
 import { ButtonOutline, ButtonPrimary } from './Button'
 
