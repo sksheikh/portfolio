@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
-import Logo from '../assets/images/logo.svg'
+// import Logo from '../assets/images/logo.svg'
+import Logo from '../assets/images/logo.png'
+
 import Navbar from './Navbar'
 
 const Header = () => {
@@ -11,14 +13,18 @@ const Header = () => {
                 md:grid md:grid-cols-[1fr,3fr,1fr]'>
                 <h1>
                     <a href='/'>
-                        <img src={Logo} width={40} height={40} alt="logo" />
+                        <img
+                            src={Logo}
+                            width={180}
+                            // height={40}
+                            alt="logo" />
                     </a>
                 </h1>
 
                 <div className='relative md:justify-self-center'>
                     <button
                         className='menu-btn md:hidden'
-                        onClick={()=> setNavOpen((prev) => !prev)} >
+                        onClick={() => setNavOpen((prev) => !prev)} >
                         <span
                             className='material-symbols-rounded'
                         >
