@@ -1,6 +1,17 @@
 import React from 'react';
+import BootstrapImg from '../assets/images/bootstrap.svg';
+import CssImg from '../assets/images/css3.svg';
+import FigmaImg from '../assets/images/figma.svg';
+import GithubImg from '../assets/images/github.svg';
+import JsImg from '../assets/images/javascript.svg';
+import LaravelImg from '../assets/images/laravel.svg';
+import MysqlImg from '../assets/images/mysql.svg';
+import NextImg from '../assets/images/nextjs.svg';
+import PhpImg from '../assets/images/php.svg';
+import PostgresImg from '../assets/images/postgres.svg';
+import ReactImg from '../assets/images/react.svg';
+import TailwindImg from '../assets/images/tailwindcss.svg';
 import SkillCard from './SkillCard';
-import FigmaImg from '../assets/images/figma.svg'
 
 
 
@@ -14,22 +25,22 @@ const Skill = () => {
             desc: 'Design tool'
         },
         {
-            imgSrc: '/src/assets/images/css3.svg',
+            imgSrc: CssImg,
             label: 'CSS',
             desc: 'User Interface'
         },
         {
-            imgSrc: '/src/assets/images/bootstrap.svg',
+            imgSrc: BootstrapImg,
             label: 'Bootstrap',
             desc: 'User Interface'
         },
         {
-            imgSrc: '/src/assets/images/tailwindcss.svg',
+            imgSrc: TailwindImg,
             label: 'TailwindCSS',
             desc: 'User Interface'
         },
         {
-            imgSrc: '/src/assets/images/javascript.svg',
+            imgSrc: JsImg,
             label: 'JavaScript',
             desc: 'Interaction'
         },
@@ -49,37 +60,37 @@ const Skill = () => {
         //     desc: 'Database'
         // },
         {
-            imgSrc: '/src/assets/images/react.svg',
+            imgSrc: ReactImg,
             label: 'React',
             desc: 'Framework'
         },
         {
-            imgSrc: '/src/assets/images/nextjs.svg',
+            imgSrc: NextImg,
             label: 'NextJs',
             desc: 'Framework'
-        },        
+        },
         {
-            imgSrc: '/src/assets/images/php.svg',
+            imgSrc: PhpImg,
             label: 'PHP',
             desc: 'Programming Language'
         },
         {
-            imgSrc: '/src/assets/images/laravel.svg',
+            imgSrc: LaravelImg,
             label: 'Laravel',
             desc: 'PHP Framework'
         },
         {
-            imgSrc: '/src/assets/images/mysql.svg',
+            imgSrc: MysqlImg,
             label: 'MySQL',
             desc: 'Database'
         },
         {
-            imgSrc: '/src/assets/images/postgres.svg',
+            imgSrc: PostgresImg,
             label: 'PostgresSQL',
             desc: 'Database'
         },
         {
-            imgSrc: '/src/assets/images/github.svg',
+            imgSrc: GithubImg,
             label: 'GitHub',
             desc: 'Version Control'
         }
