@@ -4,28 +4,30 @@ import ProjectCard from './ProjectCard';
 const Work = () => {
     const works = [
         {
-            imgSrc: '/src/assets/images/project-1.jpg',
-            title: 'Full stack music app',
-            description: "Responsive personal portfolio website built with React and Tailwind CSS, showcasing my projects and skills.",
-            tags: ['API', 'MVC', 'Development'],
-            projectLink: 'https://musify-5al0.onrender.com/',
+            imgSrc: '',
+            title: 'Rise',
+            description: "A clothing brand e-commerce web app  built with Laravel and NextJs enabling online purchases.",
+            tags: ['Laravel', 'NextJs', 'Redux'],
+            liveLink: 'https://www.rise-brand.com/',
+            gitHubLink: '',
             challenges: [
-                "Implementing context-aware responses",
-                "Managing conversation state",
-                "Integrating machine learning models"
+                "Filtered product by category,color & size",
+                "Implemented add-to-cart, checkout, guest checkout, and Google authentication",
+                "Developed API and Implement in new arrival section "
             ]
 
         },
         {
-            imgSrc: '/src/assets/images/project-2.jpg',
-            title: 'Free stock photo app',
-            description: "Responsive personal portfolio website built with React and Tailwind CSS, showcasing my projects and skills.",
-            tags: ['API', 'SPA'],
-            projectLink: 'https://pixstock-official.vercel.app/',
+            imgSrc: '',
+            title: 'MSDSL Support App',
+            description: "A client support and management system built with Laravel and React, designed to streamline client interactions and automate payment notifications.",
+            tags: ['Laravel', 'NextJs', 'PostgreSQL'],
+            liveLink: 'http://154.26.137.89:8091/',
+            gitHubLink: '',
             challenges: [
-                "Implementing context-aware responses",
-                "Managing conversation state",
-                "Integrating machine learning models"
+                "Developed robust APIs to support both web and mobile applications.",
+                "Implemented a full-featured support ticketing system, training modules, and detailed reporting.",
+                "Integrated separate login and registration systems for clients and support staff."
             ]
         },
         {
@@ -33,7 +35,8 @@ const Work = () => {
             title: 'Recipe app',
             description: "Responsive personal portfolio website built with React and Tailwind CSS, showcasing my projects and skills.",
             tags: ['Development', 'API'],
-            projectLink: '',
+            liveLink: '',
+            gitHubLink: '',
             challenges: [
                 "Implementing context-aware responses",
                 "Managing conversation state",
@@ -45,7 +48,8 @@ const Work = () => {
             title: 'Real state website',
             description: "Responsive personal portfolio website built with React and Tailwind CSS, showcasing my projects and skills.",
             tags: ['Web-design', 'Development'],
-            projectLink: 'https://github.com/codewithsadee-org/wealthome',
+            liveLink: 'https://github.com/codewithsadee-org/wealthome',
+            gitHubLink: '',
             challenges: [
                 "Implementing context-aware responses",
                 "Managing conversation state",
@@ -58,7 +62,8 @@ const Work = () => {
             description: "Responsive personal portfolio website built with React and Tailwind CSS, showcasing my projects and skills.",
 
             tags: ['eCommerce', 'Development'],
-            projectLink: 'https://github.com/codewithsadee/anon-ecommerce-website',
+            liveLink: 'https://github.com/codewithsadee/anon-ecommerce-website',
+            gitHubLink: '',
             challenges: [
                 "Implementing context-aware responses",
                 "Managing conversation state",
@@ -71,7 +76,8 @@ const Work = () => {
             description: "Responsive personal portfolio website built with React and Tailwind CSS, showcasing my projects and skills.",
 
             tags: ['Web-design', 'Development'],
-            projectLink: 'https://github.com/codewithsadee/vcard-personal-portfolio',
+            liveLink: 'https://github.com/codewithsadee/vcard-personal-portfolio',
+            gitHubLink: '',
             challenges: [
                 "Implementing context-aware responses",
                 "Managing conversation state",
@@ -91,7 +97,7 @@ const Work = () => {
                 </h2>
 
                 <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,_minmax(280px,_1fr))]">
-                    {works.map(({ imgSrc, title, description, tags, projectLink, challenges }, key) => (
+                    {works.map(({ imgSrc, title, description, tags, liveLink, gitHubLink, challenges }, key) => (
 
                         <ProjectCard
                             key={key}
@@ -99,7 +105,8 @@ const Work = () => {
                             title={title}
                             description={description}
                             tags={tags}
-                            projectLink={projectLink}
+                            liveLink={liveLink}
+                            gitHubLink={gitHubLink}
                             challenges={challenges} />
                     ))}
                 </div>
