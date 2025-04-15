@@ -69,7 +69,7 @@ const Contact = () => {
                                 autoComplete='name'
                                 className="text-field"
                                 required
-                                placeholder='Sheikh Salah Uddin' />
+                                placeholder='Enter your name' />
                         </div>
 
                         <div className="mb-4">
@@ -85,7 +85,7 @@ const Contact = () => {
                                 autoComplete='email'
                                 className="text-field"
                                 required
-                                placeholder='skuddin.ius@gmail.com' />
+                                placeholder='Enter your email' />
                         </div>
 
 

@@ -7,7 +7,8 @@ const ProjectCard = ({
     title,
     description,
     tags,
-    projectLink,
+    liveLink,
+    gitHubLink,
     challenges,
     classes
 }) => {
@@ -48,7 +49,7 @@ const ProjectCard = ({
 
                     {challenges && (
                         <div className="mb-4">
-                            <h4 className="font-medium mb-2">Key Challenges:</h4>
+                            <h4 className="font-medium mb-2">Key Features & Achievements:</h4>
                             <ul className="list-disc list-inside text-sm text-zinc-400">
                                 {challenges.map((challenge, chalIndex) => (
                                     <li key={chalIndex}>{challenge}</li>
@@ -58,9 +59,9 @@ const ProjectCard = ({
                     )}
 
                     <div className="flex space-x-4 mt-6">
-                        {projectLink && (
+                        {gitHubLink && (
                             <a
-                                href={projectLink}
+                                href={gitHubLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex items-center text-zinc-400 hover:text-zinc-300 transition-colors"
@@ -69,9 +70,10 @@ const ProjectCard = ({
                                 GitHub
                             </a>
                         )}
-                        {projectLink && (
+
+                        {liveLink && (
                             <a
-                                href={projectLink}
+                                href={liveLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex items-center text-zinc-400 hover:text-zinc-300 transition-colors"
@@ -96,7 +98,7 @@ ProjectCard.PropTypes = {
     imgSrc: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     tags: PropTypes.array.isRequired,
-    projectLink: PropTypes.string,
+    liveLink: PropTypes.string,
     description: PropTypes.string,
     challenges: PropTypes.string,
     classes: PropTypes.string
